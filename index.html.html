@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>فروشگاه من</title>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      background: linear-gradient(to bottom, #ffb347, #ff7e5f);
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .product-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-image img {
+      width: 100%;
+      display: block;
+    }
+    .product-info {
+      padding: 20px;
+    }
+    .product-title {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #ff7e5f;
+    }
+    .product-description {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #555;
+    }
+    .product-price {
+      font-size: 1.3em;
+      color: #e65100;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .buy-btn {
+      display: inline-block;
+      background-color: #ff7e5f;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .buy-btn:hover {
+      background-color: #e65100;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>فروشگاه من</h1>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/400x250.png?text=محصول+۱" alt="محصول ۱">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">نام محصول ۱</h2>
+          <p class="product-description">توضیح کوتاه در مورد محصول ۱.</p>
+          <div class="product-price">۵۰۰ افغانی</div>
+          <a href="https://wa.me/93779353842?text=سلام، من می‌خواهم محصول ۱ را سفارش بدهم." class="buy-btn" target="_blank">سفارش در واتس‌اپ</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/400x250.png?text=محصول+۲" alt="محصول ۲">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">نام محصول ۲</h2>
+          <p class="product-description">توضیح کوتاه در مورد محصول ۲.</p>
+          <div class="product-price">۸۰۰ افغانی</div>
+          <a href="https://wa.me/93779353842?text=سلام، من می‌خواهم محصول ۲ را سفارش بدهم." class="buy-btn" target="_blank">سفارش در واتس‌اپ</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/400x250.png?text=محصول+۳" alt="محصول ۳">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">نام محصول ۳</h2>
+          <p class="product-description">توضیح کوتاه در مورد محصول ۳.</p>
+          <div class="product-price">۶۵۰ افغانی</div>
+          <a href="https://wa.me/93779353842?text=سلام، من می‌خواهم محصول ۳ را سفارش بدهم." class="buy-btn" target="_blank">سفارش در واتس‌اپ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
