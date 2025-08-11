@@ -1,68 +1,84 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>فروشگاه من</title>
+  <title>PATRICK FASHION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lovelo&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: "Tahoma", sans-serif;
-      background: linear-gradient(to bottom, #ffb347, #ff7e5f);
+      background: linear-gradient(145deg, #a8c0a8, #f5f5dc);
+      box-shadow: inset 0 0 100px rgba(0,0,0,0.2);
       margin: 0;
       padding: 0;
-      direction: rtl;
+      direction: ltr;
     }
+
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 30px;
     }
+
     h1 {
       text-align: center;
-      color: white;
+      color: #2e4d2e;
       margin-bottom: 40px;
-      font-size: 2.5em;
+      font-size: 3em;
+      font-family: 'Lovelo', sans-serif;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.2);
     }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
+
     .product-card {
       background-color: white;
       border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       overflow: hidden;
       transition: transform 0.3s ease;
     }
+
     .product-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
     }
+
     .product-image img {
       width: 100%;
       display: block;
     }
+
     .product-info {
       padding: 20px;
     }
+
     .product-title {
       font-size: 1.4em;
       margin-bottom: 10px;
-      color: #ff7e5f;
+      color: #2e4d2e;
+      font-weight: bold;
     }
+
     .product-description {
       font-size: 1em;
       line-height: 1.6;
       color: #555;
     }
+
     .product-price {
       font-size: 1.3em;
-      color: #e65100;
+      color: #4a7c59;
       margin-top: 15px;
       font-weight: bold;
     }
+
     .buy-btn {
       display: inline-block;
-      background-color: #ff7e5f;
+      background-color: #4a7c59;
       color: white;
       padding: 10px 20px;
       margin-top: 15px;
@@ -71,49 +87,45 @@
       font-size: 1em;
       transition: background-color 0.3s ease;
     }
+
     .buy-btn:hover {
-      background-color: #e65100;
+      background-color: #355e42;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <h1>فروشگاه من</h1>
+    <h1>PATRICK FASHION</h1>
+
     <div class="product-grid">
+      <!-- Product 1 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="https://via.placeholder.com/400x250.png?text=محصول+۱" alt="محصول ۱">
+          <img src="https://via.placeholder.com/400x250.png?text=Product+1" alt="Product 1">
         </div>
         <div class="product-info">
-          <h2 class="product-title">نام محصول ۱</h2>
-          <p class="product-description">توضیح کوتاه در مورد محصول ۱.</p>
-          <div class="product-price">۵۰۰ افغانی</div>
-          <a href="https://wa.me/93779353842?text=سلام، من می‌خواهم محصول ۱ را سفارش بدهم." class="buy-btn" target="_blank">سفارش در واتس‌اپ</a>
+          <h2 class="product-title">Hair Oil</h2>
+          <p class="product-description">Premium hair oil for strong and shiny hair.</p>
+          <div class="product-price">500 AFN</div>
+          <a href="#" class="buy-btn">Order Now</a>
         </div>
       </div>
+
+      <!-- Product 2 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="https://via.placeholder.com/400x250.png?text=محصول+۲" alt="محصول ۲">
+          <img src="https://via.placeholder.com/400x250.png?text=Product+2" alt="Product 2">
         </div>
         <div class="product-info">
-          <h2 class="product-title">نام محصول ۲</h2>
-          <p class="product-description">توضیح کوتاه در مورد محصول ۲.</p>
-          <div class="product-price">۸۰۰ افغانی</div>
-          <a href="https://wa.me/93779353842?text=سلام، من می‌خواهم محصول ۲ را سفارش بدهم." class="buy-btn" target="_blank">سفارش در واتس‌اپ</a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/400x250.png?text=محصول+۳" alt="محصول ۳">
-        </div>
-        <div class="product-info">
-          <h2 class="product-title">نام محصول ۳</h2>
-          <p class="product-description">توضیح کوتاه در مورد محصول ۳.</p>
-          <div class="product-price">۶۵۰ افغانی</div>
-          <a href="https://wa.me/93779353842?text=سلام، من می‌خواهم محصول ۳ را سفارش بدهم." class="buy-btn" target="_blank">سفارش در واتس‌اپ</a>
+          <h2 class="product-title">Shampoo</h2>
+          <p class="product-description">Herbal shampoo for soft and healthy hair.</p>
+          <div class="product-price">800 AFN</div>
+          <a href="#" class="buy-btn">Order Now</a>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 </html>
